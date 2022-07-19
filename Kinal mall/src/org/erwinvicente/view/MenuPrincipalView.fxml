@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.erwinvicente.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="901.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resouce/images/logoTerminado2.1.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-6.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Modulos">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Empleados" />
+                  <MenuItem mnemonicParsing="false" text="Proveedores" />
+                  <MenuItem mnemonicParsing="false" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVistaAdministracion" text="Administracion" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="?">
+               <items>
+                  <MenuItem fx:id="btnAutor" mnemonicParsing="false" onAction="#mostrarVistaAutor" text="Autor" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
